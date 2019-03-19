@@ -60,6 +60,8 @@ RUN apk add --no-cache --virtual .build-deps \
 
 ADD ./docker/server/uwsgi.ini.template /opt/server
 ADD ./docker/server/nginx.conf.template /opt/server
+ADD ./docker/server/uwsgilog.ini.template /opt/server
+ADD ./docker/server/nginxlog.conf.template /opt/server
 ADD ./docker/server/start_server.sh /opt/server
 
 # Add code
